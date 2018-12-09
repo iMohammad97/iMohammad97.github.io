@@ -691,7 +691,7 @@ span.nav_text {
 }
 .ms_header {
 	position: fixed;
-	background-color: #1b2039;
+	background-color: transparent;
 	padding: 20px 50px;
 	right: 0;
 	left: 80px;
@@ -735,6 +735,11 @@ span.nav_text {
 }
 .ms_top_trend a {
 	color: #fff;
+}
+.ms_top_center {
+	line-height: 40px;
+	display: flex;
+	place-content: center;
 }
 .ms_top_right {
 	line-height: 40px;
@@ -5184,6 +5189,16 @@ h2.widget-title:after {
 	.ms_header {
 		padding: 10px 30px 10px;
 	}
+	.ms_top_center {
+		line-height: 1;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.ms_top_center {
+		line-height: 1;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
 	.ms_top_right {
 		line-height: 1;
 		padding-right: 50px;
@@ -5907,6 +5922,9 @@ h2.widget-title:after {
 	.ms_top_search {
 		max-width: 33%;
 	}
+	.ms_top_center {
+		margin-top: 0px;
+	}
 	.ms_top_right {
 		margin-top: 0px;
 	}
@@ -6094,7 +6112,10 @@ h2.widget-title:after {
 		display: none;
 	}
 	.ms_top_search {
-		max-width: 49%;
+		max-width: 30%;
+	}
+	.ms_top_center {
+		margin-top: 0px;
 	}
 	.ms_top_right {
 		margin-top: 0px;
@@ -6302,6 +6323,10 @@ h2.widget-title:after {
 @media(max-width:320px) {
 	.ms_header {
 		padding: 10px 15px 6px;
+	}
+	.ms_top_center {
+		padding-right: 0px;
+		padding-left: 0px;
 	}
 	.ms_top_right {
 		padding-right: 32px;
